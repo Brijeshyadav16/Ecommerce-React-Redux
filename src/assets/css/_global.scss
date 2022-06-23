@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Google-btn-style
+.btn__style {
+  background-color: black;
+  color: white;
+  width: 130px;
+  height: 40px;
+  font-size: 17px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    color: black;
+  }
+}
+
+.google__btn__style {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 210px;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.inverted__btn__style {
+  background-color: transparent;
+  color: black;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

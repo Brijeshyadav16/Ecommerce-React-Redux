@@ -1,0 +1,108 @@
+@import 'utlise.scss';
+@import 'global.scss';
+
+// header
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 45%) 0px 0px 20px;
+  z-index: 99;
+}
+
+nav {
+  height: 100px;
+}
+
+// category
+.category {
+  min-width: 30%;
+  width: 300px;
+  height: 270px;
+  border: 1px solid black;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .category__body {
+    background-color: #b1aaaa;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    opacity: 0.8;
+  }
+}
+
+// signup
+.signup__style {
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// card
+.card {
+  min-width: 30%;
+  width: 300px;
+  margin: 0 10px 20px 10px;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .card__body {
+    height: 270px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .button__center {
+      height: 270px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+    }
+    &:hover {
+      opacity: 0.9;
+      .button__center {
+        opacity: 1;
+      }
+    }
+  }
+  .card__footer {
+    width: 100%;
+  }
+}
+
+// checkout
+.checkout {
+  overflow: auto;
+  table {
+    thead {
+      tr {
+        th {
+          width: 200px;
+          min-width: 150px;
+          padding: 10px 0;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          width: 200px;
+          min-width: 150px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
